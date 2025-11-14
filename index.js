@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .map(
           (gb) =>
             `<li class="list-group-item">${
-              prices[gb.trim().replace("GB", "")] || 0
+              prices[gb.trim().replace("GB", "")] || 0).toFixed(2)
             } cedis</li>`
         )
         .join("");
@@ -58,11 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
         .map(
           (gb) =>
             `<li class="list-group-item">${
-              Eprices[gb.trim().replace("GB", "")] || 0
+              Eprices[gb.trim().replace("GB", "")] || 0).toFixed(2)
             } cedis</li>`
         )
         .join("");
-      totalPriceElem.innerHTML = `Total Price: ${totalPrice} cedis`;
+      totalPriceElem.innerHTML = `Total Price: ${totalPrice.toFixed(2)} cedis`;
+
 
       calculateTotalExpress(gbArray);
     }
