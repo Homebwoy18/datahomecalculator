@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error(`Package not found: ${gb.trim()}GB`);
       }
     });
-    return totalPrice;
+     return parseFloat(totalPrice.toFixed(2));
   }
 
   ///hanling express prices here ........
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error(`Package not found: ${gb.trim()}GB`);
       }
     });
-    return totalPrice;
+     return parseFloat(totalPrice.toFixed(2));
   }
 
   function handleCopy() {
