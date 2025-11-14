@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     6: 28,
     7: 32,
     8: 38,
-    9: 42
+    9: 42,
     10: 43.5,
     15: 62.5,
     20: 85,
