@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
     30: 125,
     40: 162,
     50: 205,
-    100: 390,
+    100: 390
   };
 
   const Eprices = {
@@ -194,6 +194,6 @@ document.addEventListener("DOMContentLoaded", () => {
     30: 129,
     40: 167,
     50: 185,
-    100: 395,
+    100: 395
   };
 });
