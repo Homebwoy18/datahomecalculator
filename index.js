@@ -27,14 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const operator = Normal.checked ? "MTN" : "Airtel Tigo";
     const pricesObj = Normal.checked ? prices : Eprices;
 
+    // For each GB value, add a package (allow duplicates)
     gbValues.forEach(gb => {
       const key = gb.replace(/GB/i, "").trim();
       const price = pricesObj[key] || 0;
-
-      // Add only new packages
-      if (!allPackages.some(p => p.value === key && p.operator === operator)) {
-        allPackages.push({ value: key, operator, price });
-      }
+      allPackages.push({ value: key, operator, price });
     });
 
     renderPackages();
